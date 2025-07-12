@@ -16,7 +16,8 @@ import numpy as np
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 
 st.area_chart(chart_data)
-if st.button("Aloha", type="tertiary"):
-    st.write("Ciao")
-if st.button("Aloha", type="tertiary"):
-    st.write("Ciao")
+st.button("Reset", type="primary")
+if st.button("Say hello"):
+    st.write("Why hello there")
+else:
+    st.write("Goodbye")
