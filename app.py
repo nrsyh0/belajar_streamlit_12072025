@@ -21,6 +21,8 @@ if st.button("Say hello"):
     st.write("Why hello there")
 else:
     st.write("Goodbye")
+col1, col2, col3 = st.columns(3)
+
 with col1:
     st.header("A cat")
     st.image("https://static.streamlit.io/examples/cat.jpg")
@@ -31,4 +33,7 @@ with col2:
 
 with col3:
     st.header("An owl")
+    st.image("https://static.streamlit.io/examples/owl.jpg")
+Copy
+
     st.image("https://static.streamlit.io/examples/owl.jpg")
